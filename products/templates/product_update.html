@@ -1,0 +1,26 @@
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" value="{{ product.name }}">
+        </div>
+        <div>
+            <label for="price">
+                Preço:
+            </label>
+            <input type="number" name="price" id="price" value="{{ product.price }}">
+        </div>
+        <div>
+            <label for="category">
+                Categoria:
+            </label>
+            <input type="text" name="category" id="category" value="{{ product.category }}">
+        </div>
+        <div>
+            <button type="submit">
+                Salvar
+            </button>
+        </div>
+    </form>
+</div>
